@@ -37,25 +37,30 @@ Item {
 
         Resource {
             icon: "memory"
+            label: "CPU"
             value: Cpu.percentage
         }
 
         Resource {
             icon: "memory_alt"
+            label: "RAM"
             value: Memory.percentage
             fgColour: Colours.palette.m3tertiary
         }
 
         Resource {
             icon: "hard_disk"
+            label: "SSD"
             value: Storage.percentage
             fgColour: Colours.palette.m3secondary
         }
     }
+
     component Resource: CircularProgress {
         id: res
 
         required property string icon
+        required property string label
 
         Layout.fillHeight: true
         implicitSize: height
@@ -65,11 +70,31 @@ Item {
             Anim {}
         }
 
-        MaterialIcon {
+        Column {
             anchors.centerIn: parent
-            text: res.icon
-            font: Tokens.font.icon.large
-            color: res.fgColour
+            spacing: 0
+
+            MaterialIcon {
+                anchors.horizontalCenter: parent.horizontalCenter
+                text: res.icon
+                font: Tokens.font.icon.medium
+                color: res.fgColour
+            }
+
+            StyledText {
+                anchors.horizontalCenter: parent.horizontalCenter
+                text: isNaN(res.value) ? "..." : Math.round(res.value * 100) + "%"
+                font: Tokens.font.label.small
+                color: res.fgColour
+            }
+
+            StyledText {
+                anchors.horizontalCenter: parent.horizontalCenter
+                text: res.label
+                font: Tokens.font.label.small
+                color: res.fgColour
+                opacity: 0.7
+            }
         }
     }
 }
