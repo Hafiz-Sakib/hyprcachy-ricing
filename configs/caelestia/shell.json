@@ -374,22 +374,22 @@
       "warnLevels": [
         {
           "icon": "battery_android_frame_2",
-          "level": 20,
+          "level": 40,
           "message": "You might want to plug in a charger",
-          "title": "Low battery"
+          "title": "Battery below 40%"
         },
         {
           "icon": "battery_android_frame_1",
-          "level": 10,
-          "message": "You should probably plug in a charger <b>now</b>",
-          "title": "Did you see the previous message?"
+          "level": 30,
+          "message": "Please consider plugging in your charger",
+          "title": "Battery below 30%"
         },
         {
           "critical": true,
           "icon": "battery_android_alert",
-          "level": 5,
-          "message": "PLUG THE CHARGER RIGHT NOW!!",
-          "title": "Critical battery level"
+          "level": 20,
+          "message": "Please plug in the charger now!",
+          "title": "Low battery"
         }
       ]
     },

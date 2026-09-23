@@ -165,8 +165,8 @@ PageBase {
             label: qsTr("Clock format")
             subtext: qsTr("How times are shown across the shell")
             menuItems: root.clockItems
-            active: root.clockItems[Units.twelveHourClock ? 1 : 0]
-            onSelected: item => Units.twelveHourClock = root.clockItems.indexOf(item) === 1
+            active: root.clockItems[GlobalConfig.services.useTwelveHourClock ? 1 : 0]
+            onSelected: item => GlobalConfig.services.useTwelveHourClock = root.clockItems.indexOf(item) === 1
         }
     }
 }

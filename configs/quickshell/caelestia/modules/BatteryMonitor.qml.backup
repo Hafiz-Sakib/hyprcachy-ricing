@@ -13,7 +13,6 @@ Scope {
 
     function handleBatteryWarnings(): void {
         const p = UPower.displayDevice.percentage * 100;
-        console.log("BATTERY DEBUG:", p, "onBattery:", UPower.onBattery, "warnLevels:", JSON.stringify(root.warnLevels));
 
         if (!UPower.onBattery) {
             root.lastPercentage = p;
