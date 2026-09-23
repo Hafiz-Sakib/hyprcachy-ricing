@@ -601,10 +601,11 @@
       }
     ],
     "smartScheme": true,
-    "useFahrenheit": false,
-    "useTwelveHourClock": true,
     "visualiserBars": 60,
-    "weatherLocation": ""
+    "weatherUnits": "Celsius",
+    "sensorUnits": "Celsius",
+    "clockFormat": "TwelveHour",
+    "weatherLocation": "Chattogram, BD"
   },
   "session": {
     "commands": {

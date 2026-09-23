@@ -111,7 +111,7 @@ StyledRect {
             Layout.topMargin: -parent.spacing - 4
             Layout.alignment: Qt.AlignHCenter
             asynchronous: true
-            active: GlobalConfig.services.useTwelveHourClock
+            active: Units.twelveHourClock
             visible: active
 
             sourceComponent: StyledText {

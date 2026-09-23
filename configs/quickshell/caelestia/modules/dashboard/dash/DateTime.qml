@@ -46,7 +46,7 @@ Item {
             asynchronous: true
             Layout.alignment: Qt.AlignHCenter
 
-            active: GlobalConfig.services.useTwelveHourClock
+            active: Units.twelveHourClock
             visible: active
 
             sourceComponent: StyledText {

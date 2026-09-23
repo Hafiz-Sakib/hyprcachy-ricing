@@ -168,6 +168,7 @@ pipewire-audio
 pipewire-jack
 pipewire-pulse
 pkgfile
+playerctl
 plocate
 plymouth
 polkit-gnome
