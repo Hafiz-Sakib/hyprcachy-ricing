@@ -34,7 +34,7 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("caelestia shell -d")
 
     -- Start workspace overview
-    hl.exec_cmd("qs-overview start")
+    hl.exec_cmd("sleep 2 && qs-overview start")
 end)
 
 -- ============================================================
