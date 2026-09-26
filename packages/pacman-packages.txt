@@ -42,6 +42,7 @@ chatgpt-desktop-bin
 chwd
 cli11
 cliphist
+cpptrace
 cpupower
 cryptsetup
 curl

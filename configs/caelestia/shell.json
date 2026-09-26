@@ -260,7 +260,7 @@
       }
     ],
     "excludedScreens": [],
-    "persistent": false,
+    "persistent": true,
     "popouts": {
       "activeWindow": true,
       "statusIcons": true,
