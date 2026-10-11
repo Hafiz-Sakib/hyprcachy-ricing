@@ -141,6 +141,7 @@ micro
 mkinitcpio
 modemmanager
 mtools
+mutter
 nano
 nano-syntax-highlighting
 netctl
@@ -153,6 +154,7 @@ noto-fonts-cjk
 noto-fonts-emoji
 nss-mdns
 obs-studio
+oniguruma
 opencl-mesa
 openssh
 os-prober
