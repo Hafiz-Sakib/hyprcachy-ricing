@@ -5,6 +5,7 @@ alsa-firmware
 alsa-plugins
 alsa-utils
 amd-ucode
+ark
 awesome-terminal-fonts
 baobab
 base
