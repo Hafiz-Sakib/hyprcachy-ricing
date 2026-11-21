@@ -165,6 +165,7 @@ paru
 pavucontrol
 peazip
 perl
+perl-image-exiftool
 pipewire
 pipewire-alsa
 pipewire-audio
